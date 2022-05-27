@@ -1,0 +1,67 @@
+%中括弧に入って最初の単語(hmdf,GCCLTO等)以外はbibtex形式の文献情報のコピペ
+%bibtex形式の文献情報はgoogle scholar等で論文を検索すると手に入る
+%ここで設定したhmdf等を別の場所で\cite{hmdf}と入力すると文献の番号に置き換わる
+%ここでの文献番号付けは本文でのcite順によって全自動で行われる(.bibの記述順は番号に影響しない)
+
+
+%---↓ここにBibTexをペースト↓---
+
+%---↑ここにBibTexをペースト↑---
+
+
+@Misc{GCCLTO,
+author="Free Software Foundation",
+title="GNU Compiler Collection (GCC) Internals: LTO Overview",
+howpublished="\url{https://gcc.gnu.org/onlinedocs/gccint/LTO-Overview.html#LTO-Overview}"
+}
+
+@InProceedings{hmdf,
+author="Obata, Motoki
+and Shirako, Jun
+and Kaminaga, Hiroki
+and Ishizaka, Kazuhisa
+and Kasahara, Hironori",
+editor="Pugh, Bill
+and Tseng, Chau-Wen",
+title="Hierarchical Parallelism Control for Multigrain Parallel Processing",
+booktitle="Languages and Compilers for Parallel Computing",
+year="2005",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="31--44",
+}
+
+@Misc{LLVMlangref,
+title="LLVM Language Reference Manual — LLVM 9 documentation",
+howpublished="\url{https://llvm.org/docs/LangRef.html}"
+}
+
+@inproceedings{thinlto,
+  title={ThinLTO: scalable and incremental LTO},
+  author={Johnson, Teresa and Amini, Mehdi and Li, Xinliang David},
+  booktitle={2017 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)},
+  pages={111--121},
+  year={2017},
+  organization={IEEE}
+}
+
+@misc{kasahara_book,
+  title={並列処理技術},
+  author={笠原博徳},
+  year={1991},
+  publisher={コロナ社}
+}
+
+@article{Emami,
+ author = {Emami, Maryam and Ghiya, Rakesh and Hendren, Laurie J.},
+ title = {Context-sensitive Interprocedural Points-to Analysis in the Presence of Function Pointers},
+ journal = {SIGPLAN Not.},
+ issue_date = {June 1994},
+ volume = {29},
+ number = {6},
+ year = {1994},
+ pages = {242--256},
+ numpages = {15},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 

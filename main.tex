@@ -1,0 +1,62 @@
+\documentclass[a4j, 11pt]{jreport}
+
+\setcounter{tocdepth}{2}
+
+
+\topmargin = 0cm
+\oddsidemargin = 1cm
+\evensidemargin = 1cm
+\textheight = 23cm
+\textwidth = 14cm
+
+% 参考文献の章名変更
+\renewcommand{\bibname}{参考文献}
+
+% パッケージのインポート
+\usepackage{epsf}
+\usepackage{color}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{lastpage}
+\usepackage{here}
+\usepackage{url}
+
+% 本文開始
+\begin{document}
+\pagenumbering{arabic}
+
+% タイトル
+
+% 目次
+\tableofcontents
+\listoffigures
+\listoftables
+
+% 概要 日本語版
+\chapter*{概要}
+\addcontentsline{toc}{chapter}{概要}
+\input{abstract/abstract.tex}
+
+% Abstract English
+
+
+% はじめに
+
+
+% 関連研究
+\chapter{関連研究}
+\label{chap:LTO}
+\input{LTO.tex}
+\newpage
+
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{謝辞}
+\label{chap:thanks}
+\input{thanks.tex}
+\newpage
+
+\addcontentsline{toc}{chapter}{参考文献}
+
+\bibliographystyle{junsrt}
+\bibliography{ref.bib} %ref.bibのロード
+
+\end{document}
