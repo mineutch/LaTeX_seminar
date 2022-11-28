@@ -5,5 +5,5 @@ OverLeafを用いたLaTeXセミナー（IEEE HKN Waseda Chapter）
 OverLeafというLaTexの環境をWebで使えるやつ
 
 # 発表用の資料
-pdfで格納
+latex_seminar.pdf　参照のこと
 
